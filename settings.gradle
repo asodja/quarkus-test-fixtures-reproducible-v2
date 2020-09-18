@@ -9,7 +9,8 @@ pluginManagement {
     }
 }
 rootProject.name='quarkus-test-fixtures-reproducible-v2'
-include 'test-fixtures-module'
-include 'production-module'
-include 'production-module-v2'
+include 'application'
+include 'library-1'
+include 'library-2'
+include 'static-init-library'
 

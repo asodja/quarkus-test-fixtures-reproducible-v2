@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+    id 'io.quarkus'
+    id 'java-test-fixtures'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testFixturesImplementation enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}")
+    testFixturesImplementation 'io.quarkus:quarkus-junit5'
+    testFixturesImplementation(project(':library-1'))
+    testFixturesImplementation(testFixtures(project(':library-1')))
+}
