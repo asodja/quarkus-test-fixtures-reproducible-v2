@@ -1,0 +1,13 @@
+plugins {
+    id 'java'
+    id 'java-test-fixtures'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "com.googlecode.objectify:objectify:6.0.3"
+    testFixturesImplementation "com.googlecode.objectify:objectify:6.0.3"
+}
